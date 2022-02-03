@@ -1,0 +1,103 @@
+{% comment %} {% extends "base.html" %} {% endcomment %}
+
+{% block content %}
+{% load static %}
+<!doctype html>
+
+    <html lang="en">
+      <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+        <title></title>
+      </head>
+      <body>
+        
+        
+         
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+          
+         
+            <div class="container-fluid ">
+              <a class="navbar-brand" href="http://www.iert.ac.in/">IERT HOME</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:8000/about">About us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    DefaultorList
+                    </a>
+                    
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href='http://127.0.0.1:8000/enrollment/'>enrollment</a></li>
+                      <li><a class="dropdown-item" href='/'>DefaultorList</a></li>
+                      <!-- <li><hr class="dropdown-divider"></li> -->
+                      <li><a class="dropdown-item" href="/defaultor">2 YEAR</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="http://127.0.0.1:8000/contact">contact us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input type="button" onclick="window.location.href = 'http://127.0.0.1:8000/enrollment/';" value="siginup"/>
+                  
+                   <button class="btn btn-outline-success" type="button" onclick="window.location.href = 'http://127.0.0.1:8000/admin/login/';" value=>Admin Login</button> 
+                </form>
+              </div>
+            </div>
+          </nav>
+        <!-- Optional JavaScript; choose one of the two! -->
+    
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        {% comment %} <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> {% endcomment %}
+    
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        -->
+        {% comment %} <meta http-equiv="Refresh" content="0; url='http://www.iert.ac.in/about%20us.html' " /> {% endcomment %}
+
+      </body>
+    </html>
+    <div class="container">
+      <img src="https://source.unsplash.com/random/1600x450/?info=1" class="d-block w-100 my-4" alt="...">
+      <h1 class="text-centre">ABOUT US</h1>
+      <ul style="list-style-type:square;">
+        <li>In 1962, Uttar Pradesh Government took over this Institute by constituting a registered society named “Allahabad Polytechnic, Allahabad”. The society constituted a Managing Committee consisting of 11 members to manage affairs of the Polytechnic. The state government awarded the status of grant in aid to the Institute. The rules and by-laws of the society were accordingly framed and the Director of Technical Education, U.P. became ex-officio Secretary of Management Committee.</li>
+        <li>In 1982, after reviewing the multifarious activities and the achievements of the institute, the U.P. Government changed the name of “Allahabad Polytechnic” to “Institute of Engineering and Rural Technology (IERT)”. Subsequently, the Institute was awarded Academic Autonomy by the State Government.</li>
+        <li>The Engineering Degree Division of IERT was established in 2001 as government aided self-finance institute and currently, it is affiliated with Dr. A. P. J. Abdul Kalam Technical University (AKTU), formerly known as Uttar Pradesh Technical University, Lucknow, and U.P.</li>
+        <li>IERT offers B. Tech course in seven disciplines: Civil Engineering, Computer Science & Engineering, Electrical Engineering, Electronics Engineering, Industrial & Production Engineering, Instrumentation & Control Engineering and Mechanical Engineering.</li>
+        <li>The campus of IERT spreads over 26.5 acres of land. It has separate hostel and mess facilities for boys and girls including 24-hour generator facility, telephone, and other necessary amenities. The college has well-equipped labs with modern equipment. Its computer lab own latest computers, software and application development tools, etc. It has a sizable library, consisting of a huge collection of books on engineering and several other subjects.</li>
+
+      </ul>
+
+{% comment %} {% comment %}  
+<head>
+<title>aboutus</title>
+<body>
+    
+<meta http-equiv="Refresh" content="0; url='http://www.iert.ac.in/about%20us.html' " />
+</head>
+
+</html>  {% endcomment %}
+
+{% endblock content %} 
